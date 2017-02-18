@@ -14,15 +14,15 @@ class TitleScene: SKScene {
     var btnPlay: UIButton?
     var gameTitle: SKLabelNode?
     
-    let hudTextColor = UIColor.whiteColor()
+    let hudTextColor = UIColor.white
     
-    override func didMoveToView(view: SKView) {
-        backgroundColor = UIColor.blackColor()
+    override func didMove(to view: SKView) {
+        backgroundColor = UIColor.black
         
         setupText()
     }
     
-    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         
     }
     
@@ -33,7 +33,7 @@ class TitleScene: SKScene {
         if let gameTitle = gameTitle {
             gameTitle.fontSize = 40
             gameTitle.fontColor = hudTextColor
-            gameTitle.position = CGPoint(x: CGRectGetMidX(frame), y: CGRectGetMidY(frame))
+            gameTitle.position = CGPoint(x: frame.midX, y: frame.midY)
             gameTitle.text = "Avoid / Collect"
             
             addChild(gameTitle)
@@ -44,19 +44,19 @@ class TitleScene: SKScene {
             if let btnPlay = btnPlay {
                 btnPlay.center = CGPoint(x: view.frame.width/2, y: view.frame.height - 100)
                 btnPlay.titleLabel?.font = UIFont(name: "Courier", size: 100)
-                btnPlay.setTitle("Play", forState: .Normal)
-                btnPlay.setTitleColor(hudTextColor, forState: .Normal)
-                btnPlay.addTarget(self, action: Selector("playTheGame"), forControlEvents: .TouchUpInside)
+                btnPlay.setTitle("Play", for: UIControlState())
+                btnPlay.setTitleColor(hudTextColor, for: UIControlState())
+                btnPlay.addTarget(self, action: #selector(TitleScene.playTheGame), for: .touchUpInside)
                 view.addSubview(btnPlay)
             }
         }
     }
     
     func playTheGame() {
-        if let view = view, btnPlay = btnPlay, gameScene = GameScene(fileNamed: "GameScene") {
-            gameScene.scaleMode = .AspectFill
+        if let view = view, let btnPlay = btnPlay, let gameScene = GameScene(fileNamed: "GameScene") {
+            gameScene.scaleMode = .aspectFill
             btnPlay.removeFromSuperview()
-            view.presentScene(gameScene, transition: SKTransition.fadeWithDuration(1))
+            view.presentScene(gameScene, transition: SKTransition.fade(withDuration: 1))
             view.ignoresSiblingOrder = true
         }
     }

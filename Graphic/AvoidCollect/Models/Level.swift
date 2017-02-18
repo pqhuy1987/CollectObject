@@ -27,7 +27,7 @@ class Level {
 // MARK: - Factory Methods
 extension Level {
     // TODO: make the levels work a bit differently - perhaps stepwise (steps 1-3 are an increase in the number of avoid circles, and step 4 is a speed increase?
-    class func createLevel(levelNumber: Int = 1) -> Level {
+    class func createLevel(_ levelNumber: Int = 1) -> Level {
         let level = Level()
         level.number = levelNumber
         level.circlesToDodge = 3 * levelNumber * 10 / 2
