@@ -34,7 +34,7 @@ class TitleScene: SKScene {
             gameTitle.fontSize = 40
             gameTitle.fontColor = hudTextColor
             gameTitle.position = CGPoint(x: frame.midX, y: frame.midY)
-            gameTitle.text = "Square Pop"
+            gameTitle.text = "Collect Game"
             
             addChild(gameTitle)
         }

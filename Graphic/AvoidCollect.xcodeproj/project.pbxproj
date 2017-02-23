@@ -278,7 +278,7 @@
 				TargetAttributes = {
 					36F66B5F1C78D1A10051273E = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = FSP2U7T379;
+						DevelopmentTeam = VC346ZAH77;
 						LastSwiftMigration = 0820;
 					};
 					36F66B771C78D1A10051273E = {
@@ -477,11 +477,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = FSP2U7T379;
+				DEVELOPMENT_TEAM = VC346ZAH77;
 				INFOPLIST_FILE = AvoidCollect/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.digital.crazyfish.100;
+				PRODUCT_BUNDLE_IDENTIFIER = com.graphic.square.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -492,11 +492,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = FSP2U7T379;
+				DEVELOPMENT_TEAM = VC346ZAH77;
 				INFOPLIST_FILE = AvoidCollect/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.digital.crazyfish.100;
+				PRODUCT_BUNDLE_IDENTIFIER = com.graphic.square.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

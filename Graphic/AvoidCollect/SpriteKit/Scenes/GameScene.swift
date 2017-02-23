@@ -19,12 +19,12 @@ class GameScene: SKScene {
     var circleCount = 0
     var squareCount = 0
 
-    let hudColor = UIColor.white
-    let backColor = UIColor(red: 20/255, green: 30/255, blue: 20/255, alpha: 1)
-    let circleColor = UIColor(red: 60/255, green: 120/255, blue: 50/255, alpha: 1)
-    let squareColor = UIColor(red: 120/255, green: 200/255, blue: 100/255, alpha: 1)
+    let hudColor = UIColor.blue
+    let backColor = UIColor(red: 20/255, green: 100/255, blue: 100/255, alpha: 1)
+    let circleColor = UIColor(red: 60/255, green: 60/255, blue: 50/255, alpha: 1)
+    let squareColor = UIColor(red: 200/255, green: 200/255, blue: 100/255, alpha: 1)
     let starColor = UIColor(red: 170/255, green: 200/255, blue: 160/255, alpha: 1)
-    let playerColor = UIColor.white
+    let playerColor = UIColor.red
     
     var isAlive = true
     var isLevelComplete = false
